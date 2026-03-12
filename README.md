@@ -43,6 +43,21 @@ This project was built as a hands-on exploration of:
 
 ---
 
+## Quick Start
+
+Run the project locally:
+
+```bash
+git clone https://github.com/dschechter27875/time-series-forecasting-studio.git
+cd time-series-forecasting-studio
+pip install -r requirements.txt
+python app.py
+```
+
+Then open the Gradio interface in your browser.
+
+------
+
 ## Tech Stack
 
 - Python
